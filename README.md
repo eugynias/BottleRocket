@@ -11,7 +11,8 @@
 * [6. Overview](#6-overview)
 * [6. Blackbox](#6-blackbox)
 * [6. Prototype](#6-prototype)
-* [7. Author](#7-author)
+* [7. References](#7-references)
+* [8. Author](#8-author)
 
 ---
 
@@ -48,5 +49,18 @@ We will create a new react app for consume a JSON from a URL that lists restaura
 
 <img src = "https://github.com/eugynias/BottleRocket/blob/development/images/blackbox.png" width = "100%">
 
+## 8. Prototype
 
+<img src = "https://github.com/eugynias/BottleRocket/blob/development/images/detail.png" width = "100%">
 
+<img src = "https://github.com/eugynias/BottleRocket/blob/development/images/list.png" width = "100%">
+
+<img src = "https://github.com/eugynias/BottleRocket/blob/development/images/web.png" width = "100%">
+
+## 8. References
+
+https://www.hashlabs.com/guides/en/methodology/X-Workflow.html
+
+## 9. Author
+
+* **Eugenia Najar** - [Github](https://github.com/eugynias)
