@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **[Bottle Rocket]**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
+* [1. Background](#1-background)
+* [2. Contraints](#2-contraints)
+* [3. Assumptions](#3-assumptions)
+* [4. Hypothesis](#4-hypothesis)
+* [5. Solution Proposal](#5-solution-proposal)
+* [6. Overview](#6-overview)
+* [6. Blackbox](#6-blackbox)
+* [6. Prototype](#6-prototype)
+* [7. Author](#7-author)
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 1. Background
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Develop a web application using React to consume a JSON from a URL that lists restaurants; reference screens are included in the Blueprints folder; the idea is to develop a tool 100% attached to the reference design provided that initially displays the list of restaurants based on the consumption of the URL indicated in the instructions PDF, and when clicking on any item in the list, navigate to the detail screen, where you can view the location on an embedded map and additional restaurant information.
 
-### `npm test`
+## 2. Contraints
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Mobile
+- This app has to run on windows ,Linux anda IOS
+- The UI has to reflect the requested sketches
 
-### `npm run build`
+## 3. Assumptions
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React will be a valid way to develop
+- The API will always return something (even on error)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 4. Hypothesis
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A React system with an HTML input that we can read and send as a request, this result can be interpreted by out logic and display the results in a web document, the user will get its result list (restaurants).
+- A React system with an HTML we can view and send a response where by clicking on the image of each restaurant the address is obtained.
+- A React system with an HTML input that we can read and send as a request to the Google Maps API to display the information and location of each element.
 
-### `npm run eject`
+## 5. Solution Proposal
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A react app that can consume the  2 IMDB database .
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 6. Overview
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We will create a new react app for consume a JSON from a URL that lists restaurants, and by clicking on any item on the list, navigate to the detail screen, where you can view the location on an embedded map and additional restaurant information.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 7. Blackbox
 
-## Learn More
+<img src = "https://github.com/eugynias/BottleRocket/blob/development/images/blackbox.png" width = "100%">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
