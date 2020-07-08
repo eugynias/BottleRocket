@@ -10,7 +10,7 @@ function RestaItem(data) {
 
 
   const imageOnClickHandler = () => {
-		history.push('/locationItem' )
+		history.push('/locaView' )
   };
   
 

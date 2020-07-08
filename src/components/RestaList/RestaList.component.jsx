@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import RestaItem from '../RestaItem/RestaItem.component'
+import RestaItem from '../../components/RestaItem/RestaItem.component';
 
 
 function RestaList() {
@@ -12,6 +12,7 @@ function RestaList() {
 
   const getResta = async () => {
     const response = await fetch(API_URL);
+    console.log(data)
     const data = await response.json();
     setRestaList(data);
     return data

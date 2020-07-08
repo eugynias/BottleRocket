@@ -1,17 +1,24 @@
 import React from 'react';
-import { Link } from  'react-router-dom';
+import { Link ,useHistory } from  'react-router-dom';
 
-//import img from '.../images/';
+import img from '../../assets/images/tab_lunch@3x.png';
 
 
 
 function Footer() {
+
+  const history = useHistory();
+
+  const imageOnClickHandler = () => {
+		history.push('/restaList' )
+  };
+
+
   return (
   
             <div>
-                    {/* <Link to='/RestaList'>
-                        <img src={img} />
-                    </Link> */}
+                   <img src={img} 
+          onClick={imageOnClickHandler}/>
             </div>
   );
 }

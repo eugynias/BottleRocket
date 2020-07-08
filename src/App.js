@@ -3,9 +3,9 @@ import {  BrowserRouter as Router,
           Route,
           } from  'react-router-dom';
 
-import HomeView from './views/HomeView/HomeView.component.jsx';
-import RestaView from './components/RestaView/RestaView.component';
-import LocaView from './components/LocaView/LocaView.component';
+import HomeView from './views/HomeView/HomeView.component';
+import RestaView from './views/RestaView/RestaView.component';
+import LocaView from './views/LocaView/LocalView.component';
 import Footer from './components/Footer/Footer.component'
 
 
