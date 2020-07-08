@@ -15,6 +15,7 @@ function App() {
       <Router>
         <Route exact path="/" exact component={HomeView} />
         <Route exact path="/restaView" exact component={RestaView} />
+        <Route exact path="/locaView" exact component={LocaView} />
       </Router>
       <Footer />
       
