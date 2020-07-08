@@ -11,25 +11,23 @@ function  RestaView() {
 
 
   const fetchListData = async () => {
-    return await fetch(API_URL );
-  };
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      setRestaurants(data);
+      console.log(data)
+      return data
+    };
+
 
   useEffect(() => {
-    
-    fetchListData().then( async (data) => {
-      let arrayRes = await data.json();
-      setRestaurants(arrayRes);
-      console.log(arrayRes)
-      return arrayRes
-    });
-  },[]);
+		fetchListData();
+	}, []);
 
   return (
     <div>
 
     </div>
-  )
-};
+  );
 
-
+}
 export default RestaView;
