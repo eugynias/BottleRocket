@@ -1,7 +1,9 @@
 import React from 'react';
 
 
-function App() {
+function LocationItem(data) {
+
+  
   return (
     <>
       <h1>Hello Bottle Rocket</h1>
@@ -9,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default LocationItem;

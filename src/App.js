@@ -1,11 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {  BrowserRouter as Router,
+          Route,
+          } from  'react-router-dom';
+
+import HomeView from './views/HomeView/HomeView.component.jsx';
+import RestaView from './components/RestaView/RestaView.component';
+import LocaView from './components/LocaView/LocaView.component';
+import Footer from './components/Footer/Footer.component'
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello React</h1>
+    <div>
+      <Router>
+        <Route exact path="/" exact component={HomeView} />
+        <Route exact path="/restaView" exact component={RestaView} />
+      </Router>
+      <Footer />
+      
     </div>
   );
 }
