@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 
 
-function RestaItem(data) {
+function RestaItem(restaData) {
 
   const history = useHistory();
 
@@ -16,7 +16,9 @@ function RestaItem(data) {
 
   return (
     <>
-      <img src={data.backgroundImageURL} 
+
+    <h1>hola</h1>
+      <img src={restaData.backgroundImageURL} 
           onClick={imageOnClickHandler}/>
     </>
   );

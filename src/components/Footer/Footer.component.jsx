@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link ,useHistory } from  'react-router-dom';
+import { useHistory } from  'react-router-dom';
 
-import img from '../../assets/images/tab_lunch@3x.png';
+import image from '../../assets/lunch.png';
 
 
 
@@ -17,8 +17,9 @@ function Footer() {
   return (
   
             <div>
-                   <img src={img} 
+                <img src={image} 
           onClick={imageOnClickHandler}/>
+          <h1>Footer</h1>
             </div>
   );
 }

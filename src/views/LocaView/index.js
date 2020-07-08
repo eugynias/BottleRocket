@@ -1,2 +1,2 @@
-import LocalView from './LocalView.component';
-export { LocalView };
+import LocaView from './LocaView.component';
+export { LocaView };
