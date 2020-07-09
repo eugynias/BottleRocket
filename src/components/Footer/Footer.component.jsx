@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHistory } from  'react-router-dom';
+import { useHistory, Redirect ,Link} from  'react-router-dom';
 
 import image from '../../assets/lunch.png';
-import image2 from '../../assets/tab_internets@3x.png';
+import image2 from '../../assets/tab_internets@2x.png';
 
 import * as Style from './Footer.styles';
 
@@ -10,10 +10,10 @@ import * as Style from './Footer.styles';
 
 function Footer() {
 
-  const history = useHistory();
+  const history= useHistory();
 
   const imageOnClickHandler = () => {
-		history.push('/restaList' )
+		history.push("/locaView");
   };
 
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const ImgLunch= styled.div `
-    width: 70px;
-    height: 60px;  
+const Header= styled.div `
+    height:50px;
+    background-color:#43E895;  
 `;
-export { ImgLunch };
+export { Header };
