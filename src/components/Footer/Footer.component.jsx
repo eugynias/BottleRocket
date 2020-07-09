@@ -16,11 +16,11 @@ function Footer() {
 
   return (
   
-            <div>
+            <Img>
                 <img src={image} 
           onClick={imageOnClickHandler}/>
           <h1>Footer</h1>
-            </div>
+            </Img>
   );
 }
 

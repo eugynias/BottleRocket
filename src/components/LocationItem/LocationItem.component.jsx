@@ -1,44 +1,42 @@
 import React from 'react';
-import { GoogleMap ,withScriptjs, withGoolgeMap } from "react-google-maps";
 import HeaderLoca from '../HeaderLoca/HeaderLoca.component'
-
 import {
-    GoogleMap,
-    withScriptjs,
-    withGoolgeMap,
-    Marker,
-} from "react-google-maps";
+  withGoogleMap,
+  withScriptjs,
+  GoogleMap,
+  Marker,
+  InfoWindow
+} from "google-maps";
 
-
-function Map({data}) {
-//const clave-api= AIzaSyDjgfO4nLql6GMkG1t49hLrVmMjHNOzCU0
+function Map() {
+//const clave-api= AIzaSyDjgfO4nLql6GMkG1t49hLrVmMjHNOzCU0,{name,lat,lng,address}
 return (
 
   <GoogleMap
     defaultZoom={10}
-    defaultCenter={{ lat :  , lng :}}
+    defaultCenter={{ lat :30.886597, lng: -99.915906 }}
+
   />
-    <Marker
-      key={data.contact.phone}
-      position={{
-        lat: data.restaurants.location.lat,
-        lng: data.restaurants.location.lng
-      }}
-    />
-)
+);
 }
 
-const WRAPPEDmAP = withScriptjs(withGoolgeMap(Map))
+const MapWrapped = withScriptjs(withGoogleMap (Map) );
 
 function LocationItem() {
 
   return (
     <div>
-      googleMapURL={}
+      <MapWrapped 
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `100%` }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+        />
     </div>
 
     
   )
 
 }
+//&key=${process.env.AIzaSyDjgfO4nLql6GMkG1t49hLrVmMjHNOzCU0}
 export default LocationItem;
