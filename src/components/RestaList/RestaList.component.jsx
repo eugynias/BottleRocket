@@ -7,10 +7,10 @@ const RestaList= ({ restaurants }) => {
 
   return (
     <div>
-      {/* {restaurants.map(( restaItem ) => (  
+      {restaurants.map(( restaItem ) => (  
           <RestaItem restaItem={restaItem} />
   
-      ))} */}
+      ))}
     </div>
   )
 };
