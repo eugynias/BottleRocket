@@ -14,7 +14,7 @@ function  RestaView() {
       const response = await fetch(API_URL);
       const data = await response.json();
       setRestaurants(data);
-      console.log(data)
+      //console.log(data)
       return data
     };
 
@@ -25,7 +25,7 @@ function  RestaView() {
 
   return (
     <div>
-
+        <RestaList restaurants={restaurants} />
     </div>
   );
 
