@@ -8,7 +8,7 @@ function HeaderLuch() {
   return (
     <Style.HeaderLunch>
       <h1>Lunch Time</h1>
-      <img src={image} />
+      <Style.Img src={image} />
     </Style.HeaderLunch>
   );
 }
