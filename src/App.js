@@ -13,9 +13,11 @@ function App() {
   return (
     <div>
       <Router>
-        <Route path="/" exact component={HomeView} />
-        <Route  path="/restaView" exact component={RestaView} />
-        <Route  path="/locaView" exact component={LocaView} />
+        <Route exact path="/"  component={HomeView} />
+        <Route  exact path="/restaView" component={RestaView} />
+        <Route  exact path="/locaView/:restaItem"  >
+        <LocaView />
+        </Route >
       </Router>
       <Footer />
       

@@ -10,8 +10,8 @@ import {
 } from "react-google-maps";
 
 
-function Map(data) {
-
+function Map({data}) {
+//const clave-api= AIzaSyDjgfO4nLql6GMkG1t49hLrVmMjHNOzCU0
 return (
 
   <GoogleMap
@@ -21,8 +21,8 @@ return (
     <Marker
       key={data.contact.phone}
       position={{
-        lat: data.location.lat,
-        lng: data.location.lng
+        lat: data.restaurants.location.lat,
+        lng: data.restaurants.location.lng
       }}
     />
 )
