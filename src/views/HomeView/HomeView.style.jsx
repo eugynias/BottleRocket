@@ -9,7 +9,10 @@ const ContainerHome= styled.div `
 `;
 
 const Img= styled.img`
+    padding:0;
+    margin:0;
     flex: 1 0 auto;
+    width:98vw;
     
 `;
 
