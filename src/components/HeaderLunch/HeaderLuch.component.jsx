@@ -6,10 +6,10 @@ import image from '../../assets/icon_map@2x.png';
 
 function HeaderLuch() {
   return (
-    <>
-      <h1>Header Luch</h1>
+    <Style.HeaderLunch>
+      <h1>Lunch Time</h1>
       <img src={image} />
-    </>
+    </Style.HeaderLunch>
   );
 }
 

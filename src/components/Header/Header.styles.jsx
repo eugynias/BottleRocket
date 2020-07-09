@@ -1,7 +1,22 @@
 import styled from 'styled-components';
 
 const Header= styled.div `
-    height:50px;
+    margin: 0 auto;
+    padding: 1em 1em;
+    display:flex;
+    align-items:center;
+    justify-content:space-start;
+    background-color: #2A2A2A; 
+    height:60px;
+    width:90vw;
     background-color:#43E895;  
 `;
-export { Header };
+
+const Img= styled.img `
+    
+    height:40px;
+    padding: 10px;
+   
+`;
+
+export { Header, Img};

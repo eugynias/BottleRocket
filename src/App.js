@@ -6,7 +6,7 @@ import {  BrowserRouter as Router,
 import HomeView from './views/HomeView/HomeView.component';
 import RestaView from './views/RestaView/RestaView.component';
 import LocaView from './views/LocaView/LocaView.component';
-import Footer from './components/Footer/Footer.component'
+
 
 
 function App() {
@@ -19,7 +19,6 @@ function App() {
         <LocaView />
         </Route >
       </Router>
-      <Footer />
       
     </div>
   );

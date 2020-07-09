@@ -18,16 +18,20 @@ function Footer() {
 
 
   return (
+   
         <Style.FooterContainer>
-
-          <Style.Img1>
-            <img src={image} 
-                    onClick={imageOnClickHandler}/>
-          </Style.Img1>
-          
-          <Style.Img2>
-            <img src={image2} />
-            </Style.Img2>
+            <Style.ContainerLog>
+                <Style.Logo src={image} 
+                  onClick={imageOnClickHandler}
+                />
+                <p>lunch</p>
+            </Style.ContainerLog>
+            <Style.ContainerLog>
+                <Style.Logo2 src={image2}
+                />
+                <p>internets</p>
+            </Style.ContainerLog>
+            
         </Style.FooterContainer>
   );
 }

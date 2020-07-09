@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const ImgLunch= styled.div `
+const RestaView= styled.div `
     width: 70px;
     height: 60px;  
 `;
-export { ImgLunch };
+export { RestaView };

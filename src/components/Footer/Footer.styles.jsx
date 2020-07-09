@@ -1,24 +1,33 @@
 import styled from 'styled-components';
 
 const FooterContainer= styled.div `
-    display:flex;
-    background-color: #2A2A2A;
-    width: 100rem;  
-    height:50px;
-`;
-const Img1= styled.div `
-    height:10px;
-    display:flex;
-    align-items:start;
-`;
-const Img2= styled.div `
-    height:10px;
+    margin: 0 auto;
+    padding: 1em 1em;
     display:flex;
     align-items:center;
+    justify-content:space-around;
+    background-color: #2A2A2A; 
+    height:50px;
+    width:90vw;
+`;
+const Logo= styled.img `
+    height: 2rem;
+    width: 2rem;
+
+`;
+const Logo2= styled.img `
+    height:2rem;
+    width:2rem;
+    
+`;
+const ContainerLog= styled.div `
+    color: #FFFFFF;
+    font-size:10px;
+    font-family: 'Roboto' ;
 `;
 
 
 
 
 
-export { Img1, Img2, FooterContainer };
+export { Logo, Logo2, FooterContainer ,ContainerLog};

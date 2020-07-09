@@ -8,9 +8,9 @@ import image3 from '../../assets/ic_webBack@2x.png';
 function Header() {
   return (
     <Style.Header>
-       <img src={image} />
-       <img src={image2} />
-       <img src={image3}/>
+        <Style.Img src={image3}/>
+        <Style.Img src={image} />
+        <Style.Img src={image2} />  
     </Style.Header>
   );
 }
