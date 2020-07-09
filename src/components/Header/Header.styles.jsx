@@ -14,8 +14,8 @@ const Header= styled.div `
 
 const Img= styled.img `
     
-    height:40px;
-    padding: 10px;
+    height:50px;
+    padding: 15px;
    
 `;
 
