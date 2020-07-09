@@ -6,17 +6,9 @@ import { useHistory ,Link } from "react-router-dom";
 
 function RestaItem({restaItem}) {
   
- // const history = useHistory();
-
-
-  // const imageOnClickHandler = () => {
-	// 	history.push(/locaView:${restaItem})
-  // };
-  
-
   return (
     <>
-      <Link to={`/locaView/${restaItem.name}/${restaItem.location.lng}/${restaItem.location.formattedAddress}`}>
+      <Link to={`/locaView/${restaItem.name}/${restaItem.location.lng}/${restaItem.location.lat}/${restaItem.location.formattedAddress}`}>
         <img src={restaItem.backgroundImageURL}/>
       </Link>
     </>
