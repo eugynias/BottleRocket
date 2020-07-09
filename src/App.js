@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer.component'
 
 function App() {
   return (
-    <div>
+    <div >
       <Router>
         <Route exact path="/"  component={HomeView} />
         <Route  exact path="/restaView" component={RestaView} />

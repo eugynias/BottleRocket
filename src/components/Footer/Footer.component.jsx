@@ -2,6 +2,9 @@ import React from 'react';
 import { useHistory } from  'react-router-dom';
 
 import image from '../../assets/lunch.png';
+import image from '../../assets/tab_internets@3x.png';
+
+import * as Style from './Footer.styles';
 
 
 
@@ -15,12 +18,12 @@ function Footer() {
 
 
   return (
-  
-            <Img>
-                <img src={image} 
-          onClick={imageOnClickHandler}/>
-          <h1>Footer</h1>
-            </Img>
+        <Style.FooterContainer>
+            
+            <img src={image} 
+                    onClick={imageOnClickHandler}/>
+          
+        </Style.FooterContainer>
   );
 }
 
