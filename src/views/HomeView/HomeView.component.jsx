@@ -16,10 +16,6 @@ function HomeView() {
       
       <Style.Img src={Welcome} />
 
-      <Style.Footer>
-      <Footer />
-      </Style.Footer>
-
     </Style.ContainerHome>
   );
 }

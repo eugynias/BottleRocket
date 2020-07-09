@@ -2,6 +2,8 @@ import React, { useState, useEffect }from 'react';
 import HeaderLunch from '../../components/HeaderLunch/HeaderLuch.component';
 import RestaList from '../../components/RestaList/RestaList.component';
 
+import * as Style from './RestaView.style';
+
 
 function  RestaView() {
 
@@ -31,7 +33,9 @@ function  RestaView() {
   return (
     <div>
         <HeaderLunch />
-        <RestaList restaurants={restaurants} />
+        <Style.RestImage>
+            <RestaList restaurants={restaurants} />
+        </Style.RestImage>
     </div>
   );
 

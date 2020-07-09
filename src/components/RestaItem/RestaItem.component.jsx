@@ -10,7 +10,7 @@ function RestaItem({restaItem}) {
   return (
     <>
       <Link to={`/locaView/${restaItem.name}/${restaItem.location.lng}/${restaItem.location.lat}/${restaItem.location.formattedAddress}`}>
-        <img src={restaItem.backgroundImageURL}/>
+        <Style.Image src={restaItem.backgroundImageURL} />
       </Link>
     </>
   );
