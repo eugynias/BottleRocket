@@ -1,25 +1,24 @@
 import React from 'react';
 
-import { useHistory } from "react-router-dom";
+import { useHistory ,Link } from "react-router-dom";
 
 
 
-function RestaItem(restaData) {
+function RestaItem({restaItem}) {
+  
+ // const history = useHistory();
 
-  const history = useHistory();
 
-
-  const imageOnClickHandler = () => {
-		history.push('/locaView' )
-  };
+  // const imageOnClickHandler = () => {
+	// 	history.push(/locaView:${restaItem})
+  // };
   
 
   return (
     <>
-
-    <h1>hola</h1>
-      <img src={restaData.backgroundImageURL} 
-          onClick={imageOnClickHandler}/>
+      <Link to={`/locaView/${restaItem.name}/${restaItem.location.lng}/${restaItem.location.formattedAddress}`}>
+        <img src={restaItem.backgroundImageURL}/>
+      </Link>
     </>
   );
 }

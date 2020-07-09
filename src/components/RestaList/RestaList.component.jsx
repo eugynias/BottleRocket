@@ -1,16 +1,18 @@
-import React from 'react';
+import React ,{useState} from 'react';
 
 import RestaItem from '../../components/RestaItem/RestaItem.component';
 
 
-function RestaList({ restaListData }) {
+const RestaList= ({ restaurants }) => {
+
   return (
     <div>
-      {restaListData.map((restaData) => (
-        <RestaItem restaData={restaData} />
+      {restaurants.map(( restaItem ) => (  
+          <RestaItem restaItem={restaItem} />
+  
       ))}
     </div>
-  );
+  )
 };
 
 
