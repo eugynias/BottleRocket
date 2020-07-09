@@ -1,6 +1,7 @@
 import React ,{useState} from 'react';
 
 import RestaItem from '../../components/RestaItem/RestaItem.component';
+import * as Style from './RestaList.styles';
 
 
 const RestaList= ({ restaurants }) => {

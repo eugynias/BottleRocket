@@ -1,26 +1,38 @@
 import React from 'react';
-import { useHistory } from  'react-router-dom';
+import { useHistory, Redirect ,Link} from  'react-router-dom';
 
 import image from '../../assets/lunch.png';
+import image2 from '../../assets/tab_internets@2x.png';
+
+import * as Style from './Footer.styles';
 
 
 
 function Footer() {
 
-  const history = useHistory();
+  const history= useHistory();
 
   const imageOnClickHandler = () => {
-		history.push('/restaList' )
+		history.push("/locaView");
   };
 
 
   return (
-  
-            <div>
-                <img src={image} 
-          onClick={imageOnClickHandler}/>
-          <h1>Footer</h1>
-            </div>
+   
+        <Style.FooterContainer>
+            <Style.ContainerLog>
+                <Style.Logo src={image} 
+                  onClick={imageOnClickHandler}
+                />
+                <p>lunch</p>
+            </Style.ContainerLog>
+            <Style.ContainerLog>
+                <Style.Logo2 src={image2}
+                />
+                <p>internets</p>
+            </Style.ContainerLog>
+            
+        </Style.FooterContainer>
   );
 }
 

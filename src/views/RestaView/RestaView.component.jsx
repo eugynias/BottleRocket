@@ -30,6 +30,7 @@ function  RestaView() {
 
   return (
     <div>
+        <HeaderLunch />
         <RestaList restaurants={restaurants} />
     </div>
   );
