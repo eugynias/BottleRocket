@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/BottleRocket/static/js/main.932f5618.chunk.js",
+    "main.js.map": "/BottleRocket/static/js/main.932f5618.chunk.js.map",
+    "runtime-main.js": "/BottleRocket/static/js/runtime-main.18954875.js",
+    "runtime-main.js.map": "/BottleRocket/static/js/runtime-main.18954875.js.map",
+    "static/js/2.7d22c5e3.chunk.js": "/BottleRocket/static/js/2.7d22c5e3.chunk.js",
+    "static/js/2.7d22c5e3.chunk.js.map": "/BottleRocket/static/js/2.7d22c5e3.chunk.js.map",
+    "index.html": "/BottleRocket/index.html",
+    "precache-manifest.a9049289aaacc986b6591c25aa13ba96.js": "/BottleRocket/precache-manifest.a9049289aaacc986b6591c25aa13ba96.js",
+    "service-worker.js": "/BottleRocket/service-worker.js",
+    "static/js/2.7d22c5e3.chunk.js.LICENSE.txt": "/BottleRocket/static/js/2.7d22c5e3.chunk.js.LICENSE.txt",
+    "static/media/Welcome.png": "/BottleRocket/static/media/Welcome.e11f972c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18954875.js",
+    "static/js/2.7d22c5e3.chunk.js",
+    "static/js/main.932f5618.chunk.js"
+  ]
+}
