@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const FooterContainer= styled.div `
+    position:fixed;
+    bottom: 0;
     margin: 0 auto;
     padding: 1em 1em;
     display:flex;
@@ -8,7 +10,7 @@ const FooterContainer= styled.div `
     justify-content:space-around;
     background-color: #2A2A2A; 
     height:50px;
-    width:90vw;
+    width:100%;
 `;
 const Logo= styled.img `
     height: 2rem;

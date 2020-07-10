@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, Redirect ,Link} from  'react-router-dom';
+import { Link } from  'react-router-dom';
 
 import image from '../../assets/lunch.png';
 import image2 from '../../assets/tab_internets@2x.png';
@@ -9,21 +9,13 @@ import * as Style from './Footer.styles';
 
 
 function Footer() {
-
-  const history= useHistory();
-
-  const imageOnClickHandler = () => {
-		history.push("/locaView");
-  };
-
-
   return (
-   
-        <Style.FooterContainer>
+      <Style.FooterContainer>
             <Style.ContainerLog>
+            <Link to='/restaView'>
                 <Style.Logo src={image} 
-                  onClick={imageOnClickHandler}
                 />
+            </Link>
                 <p>lunch</p>
             </Style.ContainerLog>
             <Style.ContainerLog>

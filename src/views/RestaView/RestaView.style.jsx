@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const RestaView= styled.div `
-    width: 70px;
+const RestImage= styled.div `
+    width: 100vw;
     height: 60px;  
 `;
-export { RestaView };
+export { RestImage };
