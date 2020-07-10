@@ -19,8 +19,9 @@ function App() {
         <Route  exact path="/locaView/:restaItem"  >
         <LocaView />
         </Route >
+        <Footer />
       </Router>
-      <Footer />
+     
       
     </div>
   );
