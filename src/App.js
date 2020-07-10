@@ -1,5 +1,5 @@
 import React from 'react';
-import {  BrowserRouter as Router,
+import {  HashRouter as Router,
           Route,
           } from  'react-router-dom';
 
@@ -20,9 +20,7 @@ function App() {
         <LocaView />
         </Route >
         <Footer />
-      </Router>
-     
-      
+      </Router> 
     </div>
   );
 }
