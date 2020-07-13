@@ -1,6 +1,7 @@
-import React from 'react';
-import {  HashRouter as Router,
+import React  from 'react';
+import {  BrowserRouter as Router,
           Route,
+          useParams
           } from  'react-router-dom';
 
 import HomeView from './views/HomeView/HomeView.component';
@@ -11,13 +12,16 @@ import Footer from './components/Footer/Footer.component';
 
 
 function App() {
+
   return (
     <div >
       <Router>
         <Route exact path="/"  component={HomeView} />
-        <Route  exact path="/restaView" component={RestaView} />
-        <Route  exact path="/locaView/:restaItem"  >
-        <LocaView />
+        <Route  exact path="/restaView:name" >
+          <RestaView />
+        </Route>
+        <Route  exact path="/locaView/:name"  >
+          <LocaView />
         </Route >
         <Footer />
       </Router> 
